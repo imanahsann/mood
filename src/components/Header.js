@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll";
 
 const Header = (props) => {
     return (
@@ -17,7 +18,12 @@ const Header = (props) => {
                     <p>Not sure which Gilmore Girls episodes you should stream tonight? You're in the right place! Help narrow your options by picking a character or checking out our recommendations below. Login above to save episodes to your own list!</p>
                 </div>
                 <div className="wrapper down">
-                    <a href="#main-content"><i className="fas fa-chevron-circle-down"></i></a>
+                    <Link
+                        to="main-content"
+                        smooth={true}
+                        offset={-20}
+                        duration={500}
+                    ><i className="fas fa-chevron-circle-down"></i></Link>
                 </div>
             </header>
         )

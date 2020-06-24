@@ -10,6 +10,7 @@ import RecommendedEpisode from './components/RecommendedEpisode';
 import ListEpisode from './components/ListEpisode';
 import Footer from './components/Footer';
 import firebase from './firebase';
+import { animateScroll as scroll } from "react-scroll";
 
 const provider = new firebase.auth.GoogleAuthProvider();
 const auth = firebase.auth();
@@ -160,13 +161,13 @@ class App extends Component {
       // toggle visibility of results
       resultsVisible: true
     })
-    this.scroll();
+    this.scrollResults();
   }
 
   // Scroll function
-  scroll = () => {
+  scrollResults = () => {
     const destination = document.getElementById('show-results');
-    window.scrollTo(0, destination.offsetTop + 50);
+    scroll.scrollTo(destination.offsetTop + 105);
   }
 
   // Randomize character based episode
@@ -304,7 +305,7 @@ class App extends Component {
             </div>
             {/* DISPLAY RESULTS BUTTON */}
             <div className="show-results" id="show-results">
-              <input type="submit" value="Display Results" onClick={(this.state.selectedCharacter !== '') ? this.handleSubmit : this.error} />
+            <input type="submit" value="Display Results" onClick={(this.state.selectedCharacter !== '') ? this.handleSubmit : this.error} />
             </div>
             {/* RESULTS CONTAINER BEGINS */}
             <div className={this.state.resultsVisible ? 'results results-visible' : 'results'} id="results">

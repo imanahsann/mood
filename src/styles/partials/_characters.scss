@@ -5,6 +5,7 @@
     grid-template-columns: auto auto auto auto auto auto;
     margin: 0 auto;
     justify-content: center;
+    padding: 0 50px;
 }
 
 .character-button {
@@ -31,7 +32,7 @@
 
 // Display results button
 .show-results {
-    padding: 50px 0;
+    padding: 50px 0 0;
     text-align: center;
 }
 

@@ -4,6 +4,10 @@
     .header-image {
         background-position-x: right;
     }
+    // Adjust button columns
+    .button-container {
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
 @media (max-width: 770px) {
@@ -17,46 +21,44 @@
         line-height: 1;
     }
 
-    // Shrink character buttons
-    .character-button {
-        width: 200px;
-        height: 200px;
-    }
-
     // Decrease results spacing
     .results {
         margin: 30px;
     }
 }
 
-@media (max-width: 645px) {
-    // 2 character columns at larger size
-    .button-container {
-        grid-template-columns: auto auto;
+@media (max-width: 700px) {
+    h1, h2, h3, .button-container {
+        padding: 0 20px;
     }
 
-    // Increase button size
+    .tagline-container {
+        width: 80%;
+    }
+
+    // Shrink character buttons
     .character-button {
-        width: 250px;
-        height: 250px;
+        width: 125px;
+        height: 125px;
     }
 
-    // Decrease results button spacing
     .show-results {
-        padding: 30px;
+        padding: 30px 0 0;
+    }
+
+    .recommended-episode, .list-episode {
+        margin: 30px 20px;
+    }
+
+    .results {
+        margin: 30px 20px;
     }
 }
 
-@media (max-width: 510px) {
-    // Shrink character buttons
-    .character-button {
-        width: 200px;
-        height: 200px;
-    }
-
-    // Shrink display results button
-    .show-results input {
-        font-size: 2rem;
+@media (max-width: 600px) {
+    // Adjust button columns
+    .button-container {
+        grid-template-columns: auto auto auto;
     }
 }
 
@@ -93,6 +95,21 @@
     }
 }
 
+@media (max-width: 510px) {
+    // Shrink display results button
+    .show-results input {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 475px) {
+    // Shrink character buttons
+    .character-button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media (max-width: 430px) {
     // Adjust header
     header {
@@ -101,18 +118,13 @@
 
     .tagline-container {
         width: 100%;
-        padding: 30px 50px;
+        padding: 30px 50px 20px;
         font-size: 1.3rem;
         text-transform: inherit;
     }
 }
 
 @media (max-width: 410px) {
-    // Shrink character buttons
-    .character-button {
-        width: 150px;
-        height: 150px;
-    }
 
     // Shrink display results spacing
     .show-results {
@@ -129,6 +141,7 @@
     // Adjust header
     header {
         height: auto;
+        padding: 30px 0 0;
     }
 
     .header-image {
