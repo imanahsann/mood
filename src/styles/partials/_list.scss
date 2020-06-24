@@ -1,0 +1,15 @@
+// List styles
+.list {
+    padding: 0 0 30px 0;
+}
+
+.list-visible {
+    display: block;
+}
+
+.list-image {
+    background: url(images/banner3.jpg);
+    background-size: cover;
+    background-position-x: right;
+    height: 60vh;
+}

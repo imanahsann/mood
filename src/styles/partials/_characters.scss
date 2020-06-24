@@ -1,0 +1,50 @@
+// Character selection styles
+// Button styles
+.button-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.character-button {
+    background: none;
+    border: none;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+}
+
+.opacity, .character-button:hover, .charcter-button:focus {
+    opacity: 0.5;
+}
+
+.character-button:focus {
+    outline: none;
+    border: 5px solid $highlight-color;
+    border-radius: 50%;
+}
+
+.character-button img {
+    border-radius: 50%;
+}
+
+// Display results button
+.show-results {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.show-results input {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    background: $accent-color;
+    color: $secondary-color;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.show-results input:hover, .show-results input:focus {
+    background: $primary-color;
+}

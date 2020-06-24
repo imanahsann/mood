@@ -1,0 +1,13 @@
+// Footer styles
+footer {
+    background: $accent-color;
+    color: $secondary-color;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+footer a {
+    color: $secondary-color;
+    font-weight: bold;
+}

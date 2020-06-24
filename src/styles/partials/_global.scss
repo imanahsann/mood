@@ -1,0 +1,56 @@
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$accent-color: #ff3366;
+$highlight-color: #ffcccc;
+
+html {
+    font-size: 62.5%;
+    // 10px
+}
+
+body {
+    background: $secondary-color;
+    color: $primary-color;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $primary-color;
+}
+
+h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 0.5;
+    letter-spacing: normal;
+    padding: 0 50px;
+}
+
+// Pop ups
+.swal-icon--error__line, .swal-button, .swal-icon--success__line {
+    background-color: $accent-color;
+}
+
+.swal-icon--error, .swal-icon--success__ring {
+    border-color: $accent-color;
+}
+
+.swal-button:hover, .swal-button:not([disabled]):hover {
+    background-color: $primary-color;
+ }

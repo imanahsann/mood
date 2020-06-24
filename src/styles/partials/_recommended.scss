@@ -1,0 +1,15 @@
+// Recommended styles
+.recommended {
+    padding: 50px 0 30px 0;
+}
+
+.recommended-visible {
+    display: block;
+}
+
+.recommended-image {
+    background: url(images/banner2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 60vh;
+}

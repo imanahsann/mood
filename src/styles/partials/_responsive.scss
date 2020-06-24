@@ -1,0 +1,141 @@
+// Responsive styles
+@media (max-width: 1000px) {
+    // Reposition header background to show Rory
+    .header-image {
+        background-position-x: right;
+    }
+}
+
+@media (max-width: 770px) {
+    // Adjust heading spacing
+    .heading {
+        padding-bottom: 30px;
+    }
+
+    h1, h2, h3 {
+        margin: 0;
+        line-height: 1;
+    }
+
+    // Shrink character buttons
+    .character-button {
+        width: 200px;
+        height: 200px;
+    }
+
+    // Decrease results spacing
+    .results {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 645px) {
+    // 2 character columns at larger size
+    .button-container {
+        grid-template-columns: auto auto;
+    }
+
+    // Increase button size
+    .character-button {
+        width: 250px;
+        height: 250px;
+    }
+
+    // Decrease results button spacing
+    .show-results {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    // Shrink character buttons
+    .character-button {
+        width: 200px;
+        height: 200px;
+    }
+
+    // Shrink display results button
+    .show-results input {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 565px) {
+    // Episode items all in one column
+    .results, .recommended-episode, .list-episode {
+        grid-template-columns: 1fr;
+    }
+
+    .results h2, .results h2, .recommended h3, .list h3 .summary, .season, .number, .add, .randomize {
+        grid-column: 1 / 2;
+    }
+
+    // Redistribute episode item rows
+    .summary {
+        grid-row: 3 / 4;
+        padding: 0 0 10px 0;
+    }
+
+    .season {
+        grid-row: 4 / 5;
+    }
+
+    .number {
+        grid-row: 5 / 6;
+    }
+
+    .randomize {
+        grid-row: 6 / 7;
+    }
+
+    .add {
+        grid-row: 7 / 8;
+    }
+}
+
+@media (max-width: 430px) {
+    // Adjust header
+    header {
+        padding: 30px 0;
+    }
+
+    .tagline-container {
+        width: 100%;
+        padding: 30px 50px;
+        font-size: 1.3rem;
+        text-transform: inherit;
+    }
+}
+
+@media (max-width: 410px) {
+    // Shrink character buttons
+    .character-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    // Shrink display results spacing
+    .show-results {
+        padding: 20px;
+    }
+
+    // Shrink recommended container spacing
+    .recommended {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 340px) {
+    // Adjust header
+    header {
+        height: auto;
+    }
+
+    .header-image {
+        height: 40vh;
+    }
+
+    .down {
+        display: none;
+    }
+}

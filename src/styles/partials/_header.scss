@@ -1,0 +1,49 @@
+// Header styles
+header {
+    padding: 50px 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    position: relative;
+}
+
+.login, .logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0 0;
+    font-size: 2rem;
+    color: $accent-color;
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+
+.login:hover, .logout:hover {
+    color: $primary-color;
+}
+
+.heading {
+    width: 100%;
+}
+
+.header-image {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.tagline-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+}
+
+.down {
+    font-size: 5rem;
+    text-align: center;
+}
